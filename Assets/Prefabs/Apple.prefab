@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1084834566990619304}
   - component: {fileID: 1084834566990619305}
   - component: {fileID: 1084834566990619302}
-  - component: {fileID: 8249703876934540547}
+  - component: {fileID: -6471025393314074888}
   m_Layer: 9
   m_Name: Apple
   m_TagString: Apple
@@ -110,7 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8249703876934540547
+--- !u!114 &-6471025393314074888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

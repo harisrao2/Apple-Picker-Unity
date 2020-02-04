@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-    public static float bottomY = -20f;  // marks where the apple needs to be destroyed
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Set in Inspector")]
+    public static float bottomY = -20f;
+
+
+
 
     // Update is called once per frame
     void Update()
@@ -17,6 +16,10 @@ public class Apple : MonoBehaviour
         if( transform.position.y < bottomY)
         {
             Destroy(this.gameObject);
+            //Get a reference to the ApplePicket component of Main Camera
+            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+            //Call the public AppleDestroyed() method of apScript
+            apScript.AppleDestroyed();
         }
     }
 }
